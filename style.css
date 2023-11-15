@@ -4,6 +4,5 @@ p {
     transform: translate(-50%, -50%);
     color: #000000;
     font-size: 5rem;
-    background-color: red;
     width: max-content;
 }
