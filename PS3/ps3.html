@@ -4,71 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord zeyfoxoff</title>
+    
 </head>
 <body>
     <div id="popup" class="popup">
-        <div class="FlexCenter">
+        <div class="FlexCenter left">
             <p class="pordi">Ordinateur</p>
             <img class="ordi" src="ordinateur.png" draggable="false">
         </div>
-            
-        <div class="FlexCenter">
+
+        <div class="FlexCenter right">
             <p class="pmobile">Mobile</p>
             <img class="mobile" src="mobile.png" draggable="false">
         </div>
     </div>
-    
-
     <style>
         * {
             margin: 0;
         }
 
         @font-face {
-        font-family: 'go3v2';
-        src: url('go3v2.ttf') format('opentype');
+            font-family: 'go3v2';
+            src: url('go3v2.ttf') format('opentype');
         }
 
         body {
-        font-family: 'go3v2', sans-serif;
-        font-size: 32px;
-        background-color: #0f0f0f;
-        color: #ffffff;
-        user-select: none;
-        overflow: hidden;
-        }
-
-        .FlexCenter2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-
-        .FlexCenter {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+            font-family: 'go3v2', sans-serif;
+            font-size: 32px;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            user-select: none;
+            overflow: hidden;
         }
 
         .popup {
-        position: fixed;
-        display: flex;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
         }
 
         .FlexCenter img {
-        max-width: 95%;
-        max-height: 95%;
-        border: 2px solid white;
-        border-radius: 5px;
-        box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
-}
+            max-width: 95%;
+            max-height: 95%;
+            border: 2px solid white;
+            border-radius: 5px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+        }
 
+        .mobile {
+            width: 350px;
+        }
+
+        .pordi {
+            width: fit-content;
+        }
+
+        .pmobile {
+            width: fit-content;
+        }
+
+        .popup > div {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .FlexCenter p {
+            margin: auto;
+        }
+
+        .FlexCenter.left {
+            left: 25px;
+        }
+
+        .FlexCenter.right {
+            right: 15px;
+        }
     </style>
 </body>
 </html>
