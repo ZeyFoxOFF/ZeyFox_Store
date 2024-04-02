@@ -3,67 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelogs ZeyFox Store</title>
+    <title>Changelogs</title>
 </head>
+<body>
 <style>
     body {
-        background-color: #212121;
-        color: #fdfcff;
-        font-size: 17px;
-        font-family: Helvetica, sans-serif;
-        line-height: 1;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcaeb;
+}
 
-    .title {
-        margin: 0;
-        font-size: 45px;
-    }
+.container {
+    max-width: max-content;
+    padding: 20px 20px 10px 20px;
+}
 
-    h2 {
-        font-size: 26px;
-        font-weight: 600;
-    }
+h1 {
+    text-align: left;
+    font-size: 40px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.774);
+}
 
-    .barre {
-        width: 100%;
-        height: 2px;
-        background-color: white;
-    }
+
+.changelogs {
+    list-style-type: none;
+    padding: 0;
+}
+
+.changelogs li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: .5px solid rgba(0,0,0,0.1);
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.changelogs h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ff66c4;
+}
+
+.changelogs ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.changelogs ul li {
+    margin-bottom: 5px;
+}
+
+.space {
+    margin: 0 0 0 20px;
+}
 </style>
-<body>
-    <h1 class="title">ZeyFox Store changelogs</h2>
+    <div class="container">
+        <h1>ZeyFox Store changelogs</h1>
+        <ul class="changelogs">
 
+            <li class="bloc">
+                <h2>Version 1.2</h2>
+                <ul>
+                    <li>Les HEN n'ont plus besoin de dev_blind pour installer des waves, logo psn, etc... ainsi que pour les fixs.</li>
+                    <li>Ajout de 2 versions séparées (Hen et CFW).</li>
+                    <li>Ajout de 6 catégories de logo HEN. (Version HEN)</li>
+                    <li>Ajout d'un pkg pour débloquer licenses PS3. (16000)</li>
+                    <li>Ajout d'un pkg pour débloquer licenses PS2.</li>
+                    <li>Ajout d'un pkg pour débloquer les démos.</li>
+                    <li>Ajout des jeux démos PS3 dans "Jeux PS3" > Jeux démos.</li>
+                    <li>Ajout de l'option "Changelogs" dans Paramètres > Changelogs.</li>
+                    <li>Ajout dans la catégorie "★ Extra tools" 2 options :<br>
+                        <span class="space">└ Télecharger Webman MOD</span><br>
+                        <span class="space">└ Télecharger Extended Download Plugin (Version CFW)</span> 
+                    </li>
+                    <li>Modification de l'option "Mise à jour" dans "Paramètres", maintenant vous pouvez savoir si une mise à jour est disponible ou non. (Version HEN)</li>
+                    <li>Modification de l'option "Supprimer ZeyFox Store" dans "Paramètres", la ps3 se redémarre automatiquement après que le store soit supprimé.</li>
+                    <li>Correction des coldboots sounds qui n'émettaient aucun son.</li>
+                </ul>
+            </li>
 
+            <li>
+                <h2>Version 1.0</h2>
+                <ul>
+                    <li>Ajout de la catégorie "★ Extra tools" avec 3 options : <br>
+                        <span class="space">└ Explorateur de fichiers</span><br>
+                        <span class="space">└ ★ Installation des fichiers pkg bloqué a 99%</span><br>
+                        <span class="space">└ Activer dev_blind</span>  
+                    </li>
+                </ul>
+            </li>
 
-    <h2>Version 1.2</h2>
-    <p>• Les HEN n'ont plus besoin de dev_blind pour installer des waves, logo psn, etc... ainsi que pour les fixs.</p>
-    <p>• Ajout de 2 versions séparées (Hen et CFW).</p>
-    <p>• Ajout de 6 catégories de logo HEN. (Version HEN)</p>
-    <p>• Ajout d'un pkg pour débloquer licenses PS3. (16000)</p>
-    <p>• Ajout d'un pkg pour débloquer licenses PS2.</p>
-    <p>• Ajout d'un pkg pour débloquer les démos.</p>
-    <p>• Ajout des jeux démos PS3 dans "Jeux PS3" > Jeux démos.</p>
-    <p>• Ajout de l'option "Changelogs" dans Paramètres > Changelogs.</p>
-    <p>• Ajout dans la catégorie "★ Extra tools" 2 options :</p>
-        <ul>└ Télecharger Webman MOD</ul>
-        <ul>└ Télecharger Extended Download Plugin (Version CFW)</ul>
-    <p>• Modification de l'option "Mise à jour" dans "Paramètres", maintenant vous pouvez savoir si une mise à jour est disponible ou non. (Version HEN)</p>
-    <p>• Modification de l'option "Supprimer ZeyFox Store" dans "Paramètres", la ps3 se redémarre automatiquement après que le store soit supprimé.</p>
-    <p>• Correction des coldboots sounds qui n'émettaient aucun son.</p>
-
-    <div class="barre"></div>
-
-    <h2>Version 1.1</h2>
-    <p>• Ajout de la catégorie "★ Extra tools" avec 3 options :</p>
-        <ul>└ Explorateur de fichiers</ul>
-        <ul>└ ★ Installation des fichiers pkg bloqué a 99%</ul>
-        <ul>└ Activer dev_blind</ul>
-
-    <div class="barre"></div>
-
-    <h2>Version 1.0</h2>
-    <p>• Ajout du store</p>
+            <li>
+                <h2>Version 1.0</h2>
+                <ul>
+                    <li>Ajout du store</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
